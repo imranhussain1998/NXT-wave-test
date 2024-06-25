@@ -1,0 +1,173 @@
+/* Common Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.assessment-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 20px;
+  color: rgb(0, 47, 255);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.count {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  margin-bottom: 30px;
+}
+.countingquestion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-container p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.button1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2409ee;
+  color: rgb(252, 240, 240);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.1s,
+    transform 0.1s;
+}
+.buttonquestionnoseries{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #c6f4ee;
+  color: rgb(7, 6, 6);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.1s,
+    transform 0.1s;
+}
+button {
+  padding: 10px;
+  font-size: 12px;
+  background-color: #2409ee;
+  color: rgb(252, 240, 240);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.1s,
+    transform 0.1s;
+}
+button:hover {
+  background-color: #20579a;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.selected-option {
+  background-color: #2196f3;
+}
+
+img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.question-numbers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.question-numbers-list li {
+  margin: 5px;
+}
+
+.question-numbers-list button {
+  padding: 5px 10px;
+}
+
+.error-view-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.failure-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Laptop Styles */
+@media (min-width: 768px) {
+  .assessment-container {
+    width: 60%;
+  }
+
+  .question-container {
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .question-numbers-list {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .assessment-container {
+    width: 90%;
+  }
+
+  .question-container p {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
